@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_edit_profile_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileFragment">
+
+    <ImageButton
+        android:id="@+id/imageButton_BackToProfile"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_EditProfile"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_EditProfile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/default_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_EditProfile" />
+
+    <TextView
+        android:id="@+id/textView_EditProfileNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_Name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_EditProfile" />
+
+    <TextView
+        android:id="@+id/textView_EditProfileFavWorkoutLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/label_FavoriteWorkout"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_EditProfileNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_EditProfileNameLabel" />
+
+    <TextView
+        android:id="@+id/textView_EditProfileGoalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/label_Goal"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_EditProfileFavWorkoutLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_EditProfileFavWorkoutLabel" />
+
+    <TextView
+        android:id="@+id/textView_EditProfileBioLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/label_Bio"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_EditProfileGoalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_EditProfileGoalLabel" />
+
+    <EditText
+        android:id="@+id/editText_ProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="48sp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/et_rounded_outline_style"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/hintText_Name"
+        android:textColor="#8E8E8E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_EditProfileNameLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_EditProfileNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/textView_EditProfileNameLabel" />
+
+    <EditText
+        android:id="@+id/editText_FavWorkout"
+        android:layout_width="186dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/et_rounded_outline_style"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/hint_FavWorkout"
+        android:textColor="#8E8E8E"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_EditProfileFavWorkoutLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_EditProfileFavWorkoutLabel"
+        app:layout_constraintTop_toTopOf="@+id/textView_EditProfileFavWorkoutLabel" />
+
+    <EditText
+        android:id="@+id/editText_GoalNumber"
+        android:layout_width="75sp"
+        android:layout_height="48sp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/et_rounded_outline_style"
+        android:ems="10"
+        android:hint="@string/hint_Number"
+        android:inputType="number"
+        android:textColor="#8E8E8E"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_EditProfileGoalLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_EditProfileGoalLabel"
+        app:layout_constraintTop_toTopOf="@+id/textView_EditProfileGoalLabel" />
+
+    <Spinner
+        android:id="@+id/spinner_Numerator"
+        android:layout_width="100sp"
+        android:layout_height="48sp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/et_rounded_outline_style"
+        android:entries="@array/stringArray_Label1"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_GoalNumber"
+        app:layout_constraintStart_toEndOf="@+id/editText_GoalNumber"
+        app:layout_constraintTop_toTopOf="@+id/editText_GoalNumber" />
+
+    <Spinner
+        android:id="@+id/spinner_Denominator"
+        android:layout_width="100sp"
+        android:layout_height="48sp"
+        android:background="@drawable/et_rounded_outline_style"
+        android:entries="@array/stringArray_Label2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_GoalSlash"
+        app:layout_constraintStart_toEndOf="@+id/textView_GoalSlash"
+        app:layout_constraintTop_toTopOf="@+id/textView_GoalSlash" />
+
+    <TextView
+        android:id="@+id/textView_GoalSlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/display_Slash"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_Numerator"
+        app:layout_constraintStart_toEndOf="@+id/spinner_Numerator"
+        app:layout_constraintTop_toTopOf="@+id/spinner_Numerator" />
+
+    <EditText
+        android:id="@+id/editText_Bio"
+        android:layout_width="wrap_content"
+        android:layout_height="48sp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/et_rounded_outline_style"
+        android:ems="10"
+        android:hint="@string/hint_Bio"
+        android:inputType="textPersonName"
+        android:textColor="#8E8E8E"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_EditProfileBioLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_EditProfileBioLabel"
+        app:layout_constraintTop_toTopOf="@+id/textView_EditProfileBioLabel" />
+
+    <Button
+        android:id="@+id/button_saveProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_SaveProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Bio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

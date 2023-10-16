@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_friend_profile_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <TextView
+        android:id="@+id/textView_UserProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_Profile"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_UserProfile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/default_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_UserProfile" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_Name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_UserProfile" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileFavWorkoutLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_FavoriteWorkout"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_UserProfileNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_UserProfileNameLabel" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileGoalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_Goal"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_UserProfileFavWorkoutLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_UserProfileFavWorkoutLabel" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileBioLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_Bio"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_UserProfileGoalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_UserProfileGoalLabel" />
+
+    <ImageView
+        android:id="@+id/imageView_EditProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/edit_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_UserProfile"
+        app:layout_constraintStart_toEndOf="@+id/textView_UserProfile"
+        app:layout_constraintTop_toTopOf="@+id/textView_UserProfile" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_UserProfileNameLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_UserProfileNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/textView_UserProfileNameLabel" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileFavWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_UserProfileFavWorkoutLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_UserProfileFavWorkoutLabel"
+        app:layout_constraintTop_toTopOf="@+id/textView_UserProfileFavWorkoutLabel" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileGoalNumber"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_UserProfileGoalLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_UserProfileGoalLabel"
+        app:layout_constraintTop_toTopOf="@+id/textView_UserProfileGoalLabel" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileGoalLabel1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_UserProfileGoalNumber"
+        app:layout_constraintStart_toEndOf="@+id/textView_UserProfileGoalNumber"
+        app:layout_constraintTop_toTopOf="@+id/textView_UserProfileGoalNumber" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileGoalPer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/label_Per"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_UserProfileGoalLabel1"
+        app:layout_constraintStart_toEndOf="@+id/textView_UserProfileGoalLabel1"
+        app:layout_constraintTop_toTopOf="@+id/textView_UserProfileGoalLabel1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileGoalLabel2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_UserProfileGoalPer"
+        app:layout_constraintStart_toEndOf="@+id/textView_UserProfileGoalPer"
+        app:layout_constraintTop_toTopOf="@+id/textView_UserProfileGoalPer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_UserProfileBioLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_UserProfileBioLabel"
+        app:layout_constraintTop_toTopOf="@+id/textView_UserProfileBioLabel" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileFriendsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_Friends"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_UserProfileBioLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_UserProfileBioLabel" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileFriendsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_UserProfileFriendsLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_UserProfileFriendsLabel"
+        app:layout_constraintTop_toTopOf="@+id/textView_UserProfileFriendsLabel" />
+
+    <TextView
+        android:id="@+id/textView_UserProfileFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/label_NumberFriends"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_UserProfileFriendsNumber"
+        app:layout_constraintStart_toEndOf="@+id/textView_UserProfileFriendsNumber"
+        app:layout_constraintTop_toTopOf="@+id/textView_UserProfileFriendsNumber" />
+
+    <ImageButton
+        android:id="@+id/imageButton_Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/baseline_logout_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_dashboard_fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardFragment">
+
+    <TextView
+        android:id="@+id/textView_HomepageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_Homepage"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <app.futured.donut.DonutProgressView
+        android:id="@+id/donut_Progress"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="32dp"
+        android:rotation="180"
+        app:donut_gapAngle="270"
+        app:donut_gapWidth="20"
+        app:donut_strokeWidth="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_HomepageTitle" />
+
+    <TextView
+        android:id="@+id/textView_Percentage"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="100dp"
+        android:text="@string/label_Percentage"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/donut_Progress"
+        app:layout_constraintStart_toStartOf="@+id/donut_Progress"
+        app:layout_constraintTop_toTopOf="@+id/donut_Progress" />
+
+    <TextView
+        android:id="@+id/textView_OfGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_OfGoal"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Percentage"
+        app:layout_constraintStart_toStartOf="@+id/textView_Percentage"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Percentage" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_LastWorkout"
+        android:layout_width="333dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_rounded_outline_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_LastWorkout" />
+
+    <TextView
+        android:id="@+id/textView_LastWorkout"
+        android:layout_width="145dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_lastWorkout"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView_LastWorkout"
+        app:layout_constraintTop_toBottomOf="@+id/donut_Progress" />
+
+    <TextView
+        android:id="@+id/textView_LastWorkoutName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_LastWorkout"
+        app:layout_constraintStart_toEndOf="@+id/textView_LastWorkout"
+        app:layout_constraintTop_toTopOf="@+id/textView_LastWorkout" />
+
+    <TextView
+        android:id="@+id/textView_On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/textView_DashboardOn"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_LastWorkoutName"
+        app:layout_constraintStart_toEndOf="@+id/textView_LastWorkoutName"
+        app:layout_constraintTop_toTopOf="@+id/textView_LastWorkoutName" />
+
+    <TextView
+        android:id="@+id/textView_DashboardDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_On"
+        app:layout_constraintStart_toEndOf="@+id/textView_On"
+        app:layout_constraintTop_toTopOf="@+id/textView_On" />
+</androidx.constraintlayout.widget.ConstraintLayout>

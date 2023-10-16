@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Friendly Fit</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_ShareWithFriends">Share With Friends</string>
+    <string name="hintText_SearchYourFriends">Search your friends by name or username</string>
+    <string name="button_Share">Share</string>
+    <string name="hintText_CustomWorkout">Custom Workout Name</string>
+    <string name="hintText_AddCollaborators">Add Collaborators</string>
+    <string name="hintText_ExerciseName">New Exercise Name</string>
+    <string name="label_Exercises">Exercises:</string>
+    <string name="button_CreateWorkout">Create Workout</string>
+    <string name="button_CreateANewWorkout">Create A New Workout</string>
+    <string name="button_ShareSelectedWorkout">Share Selected Workout</string>
+    <string name="button_LogSelectedWorkout">Log Selected Workout</string>
+    <string name="button_Home">Home</string>
+    <string name="button_Workouts">Workouts</string>
+    <string name="button_Friends">Friends</string>
+    <string name="button_Profile">Profile</string>
+    <string name="friends">Friends</string>
+    <string name="my_friends">My Friends</string>
+    <string name="friend_request">Requests</string>
+    <string name="friends_discover">Discover</string>
+    <string name="request">request</string>
+    <string name="friend_chat_name" />
+    <string name="enter_message">Enter Message</string>
+    <string name="sender_name" />
+    <string name="message_date" />
+    <string name="message_timestamp" />
+    <string name="message_text" />
+    <string name="message_to_timestamp" />
+    <string name="message_to_text" />
+    <string name="message_to_date" />
+    <string name="hintText_Name">Name</string>
+    <string name="hintText_Username">Username</string>
+    <string name="hintText_Email">Email</string>
+    <string name="hintText_Password">Password</string>
+    <string name="button_Login">Login</string>
+    <string name="button_SignUp">Sign Up</string>
+    <string name="label_Profile">Profile</string>
+    <string name="label_Name">Name:</string>
+    <string name="label_FavoriteWorkout">Favorite Workout:</string>
+    <string name="label_Goal">Goal:</string>
+    <string name="label_Bio">Bio:</string>
+    <string name="label_Per">per</string>
+    <string name="label_Friends">Friends:</string>
+    <string name="label_NumberFriends">Friends</string>
+    <string name="hint_FavWorkout">Input your Favorite Workout</string>
+    <string name="hint_Number">Number</string>
+    <string name="display_Slash">/</string>
+    <string name="button_SaveProfile">Save Profile</string>
+    <string name="hint_Bio">Input Bio</string>
+    <string name="label_EditProfile">Edit Profile</string>
+    <string name="label_Homepage">Homepage</string>
+    <string name="label_Percentage">%</string>
+    <string name="label_OfGoal">of Goal achieved</string>
+    <string name="label_lastWorkout">Your Last Workout:</string>
+    <string name="Search_name_username">Search by name or user name</string>
+    <string name="label_AddedFriends">Added Friends:</string>
+    <string name="label_InputWorkoutTimeInMinutes">Enter how long the workout took in minutes:</string>
+    <string name="hintText_Minutes">0</string>
+    <string name="button_Upload">Upload</string>
+    <string name="button_Retake">Retake</string>
+    <string name="label_RegisterProfile">Register Profile</string>
+    <string name="button_RegisterProfile">Register Profile</string>
+    <string name="friend_requests">Friend Requests</string>
+    <string name="discover_friends">Discover Friends</string>
+    <string name="textView_DashboardOn">on</string>
+    <string-array name="stringArray_Label1">
+        <item>minutes</item>
+        <item>hours</item>
+        <item>days</item>
+    </string-array>
+    <string-array name="stringArray_Label2">
+        <item>day</item>
+        <item>week</item>
+        <item>month</item>
+    </string-array>
+</resources>

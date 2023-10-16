@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_button_panel_fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_gray"
+    tools:context=".ButtonPanelFragment">
+
+    <Button
+        android:id="@+id/button_ButtonPanelHome"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle_button"
+        android:text="@string/button_Home"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/button_ButtonPanelWorkouts"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle_button"
+        android:text="@string/button_Workouts"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/button_ButtonPanelFriends"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle_button"
+        android:text="@string/button_Friends"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/button_ButtonPanelProfile"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle_button"
+        android:text="@string/button_Profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="13sp" />
+</LinearLayout>

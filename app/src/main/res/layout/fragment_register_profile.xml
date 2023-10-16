@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_register_profile_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterProfileFragment">
+
+
+    <TextView
+        android:id="@+id/textView_RegisterProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_RegisterProfile"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_RegisterProfile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/default_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_RegisterProfile" />
+
+    <TextView
+        android:id="@+id/textView_RegisterProfileNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_Name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_RegisterProfile" />
+
+    <TextView
+        android:id="@+id/textView_RegisterProfileFavWorkoutLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/label_FavoriteWorkout"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_RegisterProfileNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_RegisterProfileNameLabel" />
+
+    <TextView
+        android:id="@+id/textView_RegisterProfileGoalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/label_Goal"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_RegisterProfileFavWorkoutLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_RegisterProfileFavWorkoutLabel" />
+
+    <TextView
+        android:id="@+id/textView_RegisterProfileBioLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/label_Bio"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_RegisterProfileGoalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_RegisterProfileGoalLabel" />
+
+    <EditText
+        android:id="@+id/editText_RegisterProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="48sp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/et_rounded_outline_style"
+        android:ems="10"
+        android:hint="@string/hintText_Name"
+        android:inputType="textPersonName"
+        android:textColor="#8E8E8E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_RegisterProfileNameLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_RegisterProfileNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/textView_RegisterProfileNameLabel" />
+
+    <EditText
+        android:id="@+id/editText_RegisterFavWorkout"
+        android:layout_width="186dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/et_rounded_outline_style"
+        android:ems="10"
+        android:hint="@string/hint_FavWorkout"
+        android:inputType="textPersonName"
+        android:textColor="#8E8E8E"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_RegisterProfileFavWorkoutLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_RegisterProfileFavWorkoutLabel"
+        app:layout_constraintTop_toTopOf="@+id/textView_RegisterProfileFavWorkoutLabel" />
+
+    <EditText
+        android:id="@+id/editText_RegisterGoalNumber"
+        android:layout_width="75sp"
+        android:layout_height="48sp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/et_rounded_outline_style"
+        android:ems="10"
+        android:hint="@string/hint_Number"
+        android:inputType="number"
+        android:textColor="#8E8E8E"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_RegisterProfileGoalLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_RegisterProfileGoalLabel"
+        app:layout_constraintTop_toTopOf="@+id/textView_RegisterProfileGoalLabel" />
+
+    <Spinner
+        android:id="@+id/spinner_RegisterNumerator"
+        android:layout_width="100sp"
+        android:layout_height="48sp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/et_rounded_outline_style"
+        android:entries="@array/stringArray_Label1"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_RegisterGoalNumber"
+        app:layout_constraintStart_toEndOf="@+id/editText_RegisterGoalNumber"
+        app:layout_constraintTop_toTopOf="@+id/editText_RegisterGoalNumber" />
+
+    <Spinner
+        android:id="@+id/spinner_RegisterDenominator"
+        android:layout_width="100sp"
+        android:layout_height="48sp"
+        android:background="@drawable/et_rounded_outline_style"
+        android:entries="@array/stringArray_Label2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_RegisterGoalSlash"
+        app:layout_constraintStart_toEndOf="@+id/textView_RegisterGoalSlash"
+        app:layout_constraintTop_toTopOf="@+id/textView_RegisterGoalSlash" />
+
+    <TextView
+        android:id="@+id/textView_RegisterGoalSlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/display_Slash"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_RegisterNumerator"
+        app:layout_constraintStart_toEndOf="@+id/spinner_RegisterNumerator"
+        app:layout_constraintTop_toTopOf="@+id/spinner_RegisterNumerator" />
+
+    <EditText
+        android:id="@+id/editText_RegisterBio"
+        android:layout_width="wrap_content"
+        android:layout_height="48sp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/et_rounded_outline_style"
+        android:ems="10"
+        android:hint="@string/hint_Bio"
+        android:inputType="textPersonName"
+        android:textColor="#8E8E8E"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_RegisterProfileBioLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_RegisterProfileBioLabel"
+        app:layout_constraintTop_toTopOf="@+id/textView_RegisterProfileBioLabel" />
+
+    <Button
+        android:id="@+id/button_RegisterProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_RegisterProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_RegisterBio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

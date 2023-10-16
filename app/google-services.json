@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "865005914092",
+    "project_id": "friendlyfit-98797",
+    "storage_bucket": "friendlyfit-98797.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865005914092:android:072be269f2b42390dd62c9",
+        "android_client_info": {
+          "package_name": "com.example.friendlyfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865005914092-ipb1otqnh1ig3e8jl59kc20kuskaepmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyrlei0s7FhDp-WmcrHhkVa38hay8GNHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865005914092-ipb1otqnh1ig3e8jl59kc20kuskaepmg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
